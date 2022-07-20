@@ -1,10 +1,11 @@
 import linecache
+import os
 import random
 
+file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'result'))
 ## 来点白丝
-
 def give_me_some_bais(num):
-    txt = open('./result/bais.txt',mode='rb')
+    txt = open(file_path+'/bais.txt',mode='rb')
     data = txt.read().decode('utf-8')  # python3一定要加上这句不然会编码报错！
     txt.close()
 
@@ -17,7 +18,7 @@ def give_me_some_bais(num):
         i = random.randint(1, (n + 1))
         print("本次使用的行数", i)
         ## 得到对应的i行的数据
-        line=linecache.getline(r'./result/bais.txt', i).replace("\n",'')
+        line=linecache.getline(file_path+'/bais.txt', i).replace("\n",'')
         heis_set.append(line)
     print(heis_set)
     linecache.clearcache()
@@ -26,7 +27,7 @@ def give_me_some_bais(num):
 
 ## 来点黑丝
 def give_me_some_heis(num):
-    txt = open('./result/heis.txt',mode='rb')
+    txt = open(file_path+'/heis.txt',mode='rb')
     data = txt.read().decode('utf-8')  # python3一定要加上这句不然会编码报错！
     txt.close()
 
@@ -39,7 +40,7 @@ def give_me_some_heis(num):
         i = random.randint(1, (n + 1))
         print("本次使用的行数", i)
         ## 得到对应的i行的数据
-        line=linecache.getline(r'./result/heis.txt', i).replace("\n",'')
+        line=linecache.getline(file_path+'/heis.txt', i).replace("\n",'')
         heis_set.append(line)
     print(heis_set)
     linecache.clearcache()
@@ -47,7 +48,7 @@ def give_me_some_heis(num):
 
 ## 来点足控
 def give_me_some_zuk(num):
-    txt = open('./result/zuk.txt',mode='rb')
+    txt = open(file_path+'/zuk.txt',mode='rb')
     data = txt.read().decode('utf-8')  # python3一定要加上这句不然会编码报错！
     txt.close()
     # 获取txt的总行数！
@@ -59,7 +60,7 @@ def give_me_some_zuk(num):
         i = random.randint(1, (n + 1))
         print("本次使用的行数", i)
         ## 得到对应的i行的数据
-        line=linecache.getline(r'./result/zuk.txt', i).replace("\n",'')
+        line=linecache.getline(file_path+'/zuk.txt', i).replace("\n",'')
         heis_set.append(line)
     print(heis_set)
     linecache.clearcache()
@@ -68,7 +69,7 @@ def give_me_some_zuk(num):
 
 ## 来点jk
 def give_me_some_jk(num):
-    txt = open('./result/jk.txt',mode='rb')
+    txt = open(file_path+'/jk.txt',mode='rb')
     data = txt.read().decode('utf-8')  # python3一定要加上这句不然会编码报错！
     txt.close()
     # 获取txt的总行数！
@@ -80,7 +81,7 @@ def give_me_some_jk(num):
         i = random.randint(1, (n + 1))
         print("本次使用的行数", i)
         ## 得到对应的i行的数据
-        line=linecache.getline(r'./result/jk.txt', i).replace("\n",'')
+        line=linecache.getline(file_path+'/jk.txt', i).replace("\n",'')
         heis_set.append(line)
     print(heis_set)
     linecache.clearcache()
@@ -88,7 +89,7 @@ def give_me_some_jk(num):
 
 ## 来点巨乳
 def give_me_some_jur(num):
-    txt = open('./result/jur.txt',mode='rb')
+    txt = open(file_path+'/jur.txt',mode='rb')
     data = txt.read().decode('utf-8')  # python3一定要加上这句不然会编码报错！
     txt.close()
     # 获取txt的总行数！
@@ -100,7 +101,7 @@ def give_me_some_jur(num):
         i = random.randint(1, (n + 1))
         print("本次使用的行数", i)
         ## 得到对应的i行的数据
-        line=linecache.getline(r'./result/jur.txt', i).replace("\n",'')
+        line=linecache.getline(file_path+'/jur.txt', i).replace("\n",'')
         heis_set.append(line)
     print(heis_set)
     linecache.clearcache()
@@ -108,7 +109,7 @@ def give_me_some_jur(num):
 
 ## 来点网红
 def give_me_some_mcn(num):
-    txt = open('./result/mcn.txt',mode='rb')
+    txt = open(file_path+'/mcn.txt',mode='rb')
     data = txt.read().decode('utf-8')  # python3一定要加上这句不然会编码报错！
     txt.close()
     # 获取txt的总行数！
@@ -120,7 +121,7 @@ def give_me_some_mcn(num):
         i = random.randint(1, (n + 1))
         print("本次使用的行数", i)
         ## 得到对应的i行的数据
-        line=linecache.getline(r'./result/mcn.txt', i).replace("\n",'')
+        line=linecache.getline(file_path+'/mcn.txt', i).replace("\n",'')
         heis_set.append(line)
     print(heis_set)
     linecache.clearcache()

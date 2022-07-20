@@ -3,7 +3,7 @@ import traceback
 from hoshino.typing import MessageSegment
 from hoshino import Service, priv
 
-from main_func import *
+from .main_func import *
 
 sv = Service('give_me_some_heis')
 def render_forward_msg(msg_list: list, uid=1916714922, name='小加加(VC装甲钢36D版)'):
