@@ -51,14 +51,16 @@ async def quick_search_skin(bot, ev):
                 jk_set = give_me_some_jk(2)
                 msg_list.append(MessageSegment.image(file=jk_set[0]) + "\n")
                 msg_list.append(MessageSegment.image(file=jk_set[1]) + "\n")
-            forward_msg = render_forward_msg(msg_list)
-            await bot.send_group_forward_msg(group_id=ev.group_id, messages=forward_msg)
-            return
         else:
             return
+        if len(msg_list)==0 :
+            return
+        forward_msg = render_forward_msg(msg_list)
+        await bot.send_group_forward_msg(group_id=ev.group_id, messages=forward_msg)
+        return
 
     except:
         msg = '载图出错.请看日志'
         traceback.print_exc()
-        await bot.send(ev, str(msg), at_sender=True)
+        await bot.send(ev, str(msg)+str(traceback.print_exc()), at_sender=True)
         return
